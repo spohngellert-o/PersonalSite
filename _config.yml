@@ -1,1 +1,32 @@
-Title: My Site
+# top level stuff you probably don't need to touch
+highlighter: rouge
+markdown: kramdown
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+plugins: [jekyll-paginate]
+port: 3000
+safe: true
+
+
+# edit here to achieve your personal greatness
+url: http://oliverspohngellert.com
+baseurl:
+title: Oliver Spohngellert
+author: Oliver Spohngellert
+description: Personal blog and resume
+avatar: profile.png
+email: ospohngellert@gmail.com
+github: spohngellert-o # username
+# twitter: username
+linkedin: spohngellert-o
+lichess: spohngellert_o
+# stackoverflow: username   #e.g: users/2735833/proton1h1
+#Comment out if you don't want disqus
+# disqus: username
+# google_analytics: UA-69391421-1
+
+
+# needed for travis-ci build
+exclude: [vendor]
