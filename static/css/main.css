@@ -25,6 +25,12 @@ body {
 .navbar-static-top {
   margin-bottom: 10px;
 }
+.fa-font:before {
+        font-family: roboto;
+        color: #ffffff;
+        font-size: 1.2em;
+        content: "f";   #any letter of your choice but for kaggle "k"
+}
 .navbar-default {
   background-color: #ffffff;
   border-color: #ffffff;
