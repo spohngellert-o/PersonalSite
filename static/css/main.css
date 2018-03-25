@@ -23,6 +23,9 @@ body {
 /* Navbar
 -------------------------------------------------- */
 
+.panel-body a {
+  font-weight: bold;
+}
 .navbar-static-top {
   margin-bottom: 10px;
 }
