@@ -3,7 +3,7 @@ layout: post
 title: Review of Andrew Ng's Deep Learning Specialization
 category: Deep Learning
 tags:
-- Eductaion
+- Education
 - Review
 ---
 
