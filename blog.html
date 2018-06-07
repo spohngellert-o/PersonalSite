@@ -21,7 +21,7 @@ title: Blog
 				</div>
 		    {% endfor %}
 		</ul>
-    	{% for category in site.categories limit:2 %}
+    	{% for category in site.categories %}
 		  <h3><a name="{{ category | first }}" href='/category/{{ category | first }}.html'>{{ category | first }}</a>
 		    <!-- <ul>
 		    {% for posts in category %}
