@@ -10,6 +10,8 @@ category: Coding
 any(function_takes_time(i) for i in range(10 ** 3))
 ```
 
+---
+
 Recently when writing code I came across the fact that the `any` function in python is not optimized on list comprehensions. This can be demonstrated with the following code:
 
 ```python
