@@ -1,13 +1,35 @@
 <section id="projects">
 <div class="container">
+  <h2>Publications</h2>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h5><strong>The House That Knows You</strong> - Extracted data from IoT network traffic logs to classify the user of the IoT devices during a given time period. I worked on implementing a RNN for this data, which showed promise but unfortunately didn't end up producing the best results due to a lack of data (in total, there were < 1000 rows of data). Our group achieved a top overall F1 score of 0.86. Read the full paper <a href='https://arxiv.org/abs/1908.00592'>here</a>.
+    </div>
+  </div>
+
   <h2>Projects</h2>
   <div class="panel panel-default">
     <div class="panel-body">
-    	<h3 style='text-decoration: underline; margin-bottom: 2px;'> Completed </h3>
-		<h5><strong>Titanic Survival Problem</strong> - Created a model for the Titanic Survival Problem on Kaggle that predicted with 79.4% accuracy. See the kernel <a href='https://www.kaggle.com/ospohngellert/titanic-kernel-79-4-accuracy/' style='font-weight: bold;'>here</a>. This was a first project for me, so in the future I'll look to improve on this when I have more experience.</h5>
-    	
-		<h3 style='text-decoration: underline; margin-bottom: 2px;'> In Progress </h3>
-		<h5><strong>Genre Classification by Lyrics</strong> - I currently have achieved a best case of 72% accuracy on artists I have already trained on, and 62% accuracy on new artists. My current next steps are more data collection, rethinking features, and attempting computationally inefficient methods (like k-fold cross validation). Follow my progress <a href='https://github.com/spohngellert-o/genre_classification'>here</a>.</h5>
+
+
+    <h3 style='text-decoration: underline; margin-bottom: 2px;'> Completed </h3>
+
+    <h5><strong>Large-Scale Analysis of Gene Sensitivity</strong> - Individual project for Statistical Methods in Computer Science course. Used Broad Institute's L1000 dataset to identify genes that are most and least likely to change expression level under perturbation. This would be useful in development of new drugs, as if a gene changes expression level under a new drug, but not under many others, then it is likely significant to the drug's function. To accomplish this task, I used large scale ANOVA testing on the dataset with Benjamini–Hochberg correction for multiple testing. I considered this to be a two factor experiment, with perturbation being one factor and batch number another. See my full report <a href='CS7200_Report.pdf'>here</a>.</h5>
+    
+    <h5><strong>Predicting Smashbros</strong> - This was a group project for the class Supervised Machine Learning, where the goal was to predict the outcome of a game of Super Smashbros Melee given the current gamestate. In order to do this, data was collected from <a href='https://slippi.gg/tournaments'>Project Slippi</a>, a publicly available tool to record the gamestate at every frame of a game. We then cleaned the data and then used various algorithms to predict the outcome of various games given the current state of the game. Our best model achieved 74% accuracy, and an AUC of 0.83. However, measuring success in this project was very difficult, as it is more important that the model reflects the chances of each player to win the game than that the model predicts the outcome correctly. In the future, I'd like to add measurements for uncertainty of the prediction to this model. </h5>
+
+    <h5><strong>Classifying Political Articles</strong> - This was a group project for the class Introduction to Data Management, where the goal was to find differences between news articles written from right, left, and center sources.  To this end, news articles were scraped from various sites and classified under left, right, or center based on the site's political lean. We analyzed differences in the most used words in articles by source and by political lean, in addition to implementing machine learning algorithms to classify articles based on the article's text. A summary of the results can be found <a href='NewsBiasResults.pdf'>here</a>.</h5>
+		
+    <h5><strong>Genre Classification by Lyrics</strong> - The goal of this project was to classify a song's genre based solely on its lyrics. Metrics for this project are a little complicated, and must be split up into two categories: success rate on songs that were not in the train set, but that were written by artists in the training set, and songs from artists that were not used for training. 72% accuracy was achieved on the former, and 62% on the latter. I believe better could be achieved with more training data, and potentially more complex approaches. My code can be found <a href='https://github.com/spohngellert-o/genre_classification'>here</a>, though it is disorganized and hasn't been touched in a long time.</h5>
+
+    <h5><strong>Titanic Survival Problem</strong> - Created a model for the Titanic Survival Problem on Kaggle that predicted with 79.4% accuracy. See the kernel <a href='https://www.kaggle.com/ospohngellert/titanic-kernel-79-4-accuracy/'>here</a>. This was a first project for me, so in the future I'll look to improve on this when I have more experience.</h5>
+    
+    
+    <h3 style='text-decoration: underline; margin-bottom: 2px;'> In Progress </h3>
+
+    <h5><strong>Predicting Smashbros Website</strong> - I have done some work to create a website where a user can upload a game of smash that they played, and the website will show them the graph of predicted win probabilities throughout the game.</h5>
+
+
     </div>
   </div>
 </div>
